@@ -1,7 +1,7 @@
 ﻿Android-TamilUtil
 =================
 
-This library can be used to convert Unicode string to Bamini or TSCII.
+This library can be used to convert Unicode string to Bamini, Anjal, TAB, TAM and TSCII.
 
 Steps to use this library.
 
@@ -11,7 +11,7 @@ Steps to use this library.
 
 This is a sample on how you can utilise the library
 
-    // Initialise the Typeface (assumes TSCII / Bamini font located inside assets/fonts folder)
+    // Initialise the Typeface (assumes TSCII, Bamini, Anjal, TAB or TAM font located inside assets/fonts folder)
     Typeface tf = Typeface.createFromAsset(getAssets(),"fonts/mylai.ttf");
     // Initialises the TextView
     TextView tv = (TextView)findViewById(R.id.textView1);
@@ -26,4 +26,6 @@ Final out put would look something like below
 
 ![Alt text](https://raw.github.com/mayooresan/Android-Tamil/master/final_output.png "Android Tamil")
 
-Inspired by [Tamil Visai](https://github.com/thamizha/android-tamilvisai) and [Pongu thamizh by Suratha](http://www.suratha.com/reader.htm)
+Inspired by [Tamil Visai](https://github.com/thamizha/android-tamilvisai) and [Pongu thamizh by Suratha](http://www.suratha.com/reader.htm). 
+
+Special thanks to [Mauran](http://mauran.blogspot.com/) for sharing the conversion code for TAB, TAM and Anjal
