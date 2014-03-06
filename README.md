@@ -1,7 +1,15 @@
 ﻿Android-TamilUtil
 =================
 
-This library can be used to convert Unicode string to Bamini, Anjal, TAB, TAM and TSCII.
+Most of the pre ICS Android devices do not support Unicode Tamil. As the result, TypeFace is used with non-unicode fonts to display Tamil in Android applications. Often contents available in UTF-8 as Unicode is the universal standard now. This library will help you to covert Unicode string to non-unicode string with just few lines of code.
+
+Following are the supported encodings
+1. Bamini
+2. Anjal
+3. TAB
+4. TAM
+5. TSCII
+
 
 Steps to use this library.
 
@@ -11,7 +19,7 @@ Steps to use this library.
 
 This is a sample on how you can utilise the library
 
-    // Initialise the Typeface (assumes TSCII, Bamini, Anjal, TAB or TAM font located inside assets/fonts folder)
+    // Initialise the Typeface (assuming that TSCII, Bamini, Anjal, TAB or TAM font located inside assets/fonts folder)
     Typeface tf = Typeface.createFromAsset(getAssets(),"fonts/mylai.ttf");
     // Initialises the TextView
     TextView tv = (TextView)findViewById(R.id.textView1);
