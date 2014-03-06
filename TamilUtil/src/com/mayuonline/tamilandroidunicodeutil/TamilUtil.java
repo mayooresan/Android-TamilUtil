@@ -1,13 +1,44 @@
 package com.mayuonline.tamilandroidunicodeutil;
 
-
+/**
+ * 
+ * @author மயூரேசன்
+ * @குறிப்பு யுனிக்கோட் முறையில் இருக்கும் சொற்கள் வசனங்களை பாமினி, திஸ்கி, டாப், டாம் போன்ற 
+ * குறிமுறைகளுக்கு மாற்றியமைக்க இந்த செயலி உங்களுக்கு உதவும்
+ *
+ */
 public class TamilUtil {
+	/**
+	 * பாமினி முறையில் அமைந்த குறியேற்றம்
+	 */
 	public final static int BAMINI = 0;
+	/**
+	 * திஸ்கி முறையில் அமைந்த குறியேற்றம்
+	 */
 	public final static int TSCII = 1;
+	/**
+	 * அஞ்சல் முறையில் அமைந்த குறியேற்றம்
+	 */
 	public final static int ANJAL = 2;
+	/**
+	 * டாப் முறையில் அமைந்த குறியேற்றம்
+	 */
 	public final static int TAB = 3;
+	/**
+	 * டாம் முறையில் அமைந்த குறியேற்றம்
+	 */
 	public final static int TAM = 4;
 	
+	/**
+	 * இந்த method இன் மூலம் நீங்கள் யுனிக்கோட் குறிமுறையில் இருந்து உங்களுக்குத் 
+	 * தேவையான குறிமுறைக்கு சொற்கள், வசனங்களை மாற்றிக் கொள்ளலாம்.
+	 * @param encodCode - எந்தக் குறிமுறைக்கு மாற்ற விரும்புகின்றீர்கள் என்பதை இங்கே குறிப்பிட வேண்டும்.
+	 * உதாரணமாக பாமினி முறை என்றால் TamilUtil.BAMINI என்றோ அல்லது திஸ்கி முறைமை என்றால் TamilUtil.TSCII
+	 * என்றோ குறிப்பிடலாம்.
+	 * 
+	 * @param unicodeStr யுனிக்கோட் சொற்கள் வசனங்கள்
+	 * @return யுனிக்கோடில் இருந்து நீங்கள் குறிப்பிட்ட குறிமுறைக்கு மாற்றப்பட்ட சொற்கள், வசனங்கள் உங்களுக்கு வந்து கிடைக்கும்.
+	 */
 	public static String convertToTamil(int encodCode, String unicodeStr){
 		String convertedStr = "";
 		TamilUtil tu = new TamilUtil();

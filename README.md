@@ -4,6 +4,7 @@
 Most of the pre ICS Android devices do not support Unicode Tamil. As the result, TypeFace is used with non-unicode fonts to display Tamil in Android applications. Often contents available in UTF-8 as Unicode is the universal standard now. This library will help you to covert Unicode string to non-unicode string with just few lines of code.
 
 Following are the supported encodings
+
 1. Bamini
 2. Anjal
 3. TAB
