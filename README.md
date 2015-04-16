@@ -20,20 +20,22 @@ Steps to use this library.
 
 This is a sample on how you can utilise the library
 
-    // Initialise the Typeface (assuming that TSCII, Bamini, Anjal, TAB or TAM font located inside assets/fonts folder)
-    Typeface tf = Typeface.createFromAsset(getAssets(),"fonts/mylai.ttf");
-    // Initialises the TextView
-    TextView tv = (TextView)findViewById(R.id.textView1);
-    //Setting the Typeface
-    tv.setTypeface(tf);
-    //Magic happens here ;) encoding conversion
-    String TSCIIString = TamilUtil.convertToTamil(TamilUtil.TSCII, "வணக்கம் அன்ரொயிட்");
-    //Setting the new string to TextView
-    tv.setText(TSCIIString);
+// Initialise the Typeface (assuming that TSCII, Bamini, Anjal, TAB or TAM font located inside assets/fonts folder)
+Typeface tf = Typeface.createFromAsset(getAssets(),"fonts/mylai.ttf");
+// Initialises the TextView
+TextView tv = (TextView)findViewById(R.id.textView1);
+//Setting the Typeface
+tv.setTypeface(tf);
+//Magic happens here ;) encoding conversion
+String TSCIIString = TamilUtil.convertToTamil(TamilUtil.TSCII, "வணக்கம் அன்ரொயிட்");
+//Setting the new string to TextView
+tv.setText(TSCIIString);
 
 Final out put would look something like below
 
 ![Screen Shot Tamil Unicode Converter Utill](https://raw.github.com/mayooresan/Android-TamilUtil/master/ScreenShot.png "Android Tamil")
+
+if you are using Android Studio. Please [download the jar](https://github.com/mayooresan/Android-TamilUtil/blob/master/tamilutillib.jar?raw=true) and placed it inside your lib folder as incorporating the Androd Library built on Eclipse ADT may cause issues on Android Studio.
 
 Inspired by [Tamil Visai](https://github.com/thamizha/android-tamilvisai) and [Pongu thamizh by Suratha](http://www.suratha.com/reader.htm). 
 
