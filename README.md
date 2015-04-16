@@ -1,4 +1,4 @@
-﻿Android-TamilUtil
+Android-TamilUtil
 =================
 
 Most of the pre ICS Android devices do not support Unicode Tamil. As the result, TypeFace is used with non-unicode fonts to display Tamil in Android applications. Often contents available in UTF-8 as Unicode is the universal standard now. This library will help you to covert Unicode string to non-unicode string with just few lines of code.
@@ -35,7 +35,7 @@ Final out put would look something like below
 
 ![Screen Shot Tamil Unicode Converter Utill](https://raw.github.com/mayooresan/Android-TamilUtil/master/ScreenShot.png "Android Tamil")
 
-if you are using Android Studio. Please [download the jar](https://github.com/mayooresan/Android-TamilUtil/blob/master/tamilutillib.jar?raw=true) and placed it inside your lib folder as incorporating the Androd Library built on Eclipse ADT may cause issues on Android Studio.
+if you are using Android Studio, please [download the jar](https://github.com/mayooresan/Android-TamilUtil/blob/master/tamilutillib.jar?raw=true) and placed it inside your lib folder as incorporating the Androd Library built on Eclipse ADT may cause issues on Android Studio.
 
 Inspired by [Tamil Visai](https://github.com/thamizha/android-tamilvisai) and [Pongu thamizh by Suratha](http://www.suratha.com/reader.htm). 
 
